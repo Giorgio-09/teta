@@ -1,0 +1,71 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <link rel="stylesheet" href="criptografia.css">
+        <title>CRIPTOGRAFIA</title>
+    </head>
+    <body>
+        <div class="wrapper">
+          <header class="header">
+            <div class="modalita">
+              <button class="button_modalita" id="button1">cifratura odierna</button>
+              <button class="button_modalita" id="button2">cifratura</button>
+              <button class="button_modalita" id="button3">decifratura</button>
+              <button class="button_modalita" id="button4">traduzione</button>
+            </div>
+          </header>
+      
+          <main class="main" id="main">
+
+            <!-- cifratura odierna -->
+            <div class="modalita_selezionata" id="cifratura_odierna">
+              <p class="titolo1">CIFRATURA ODIERNA</p>
+              <div class="contenitore_textarea">
+                <textarea class="input" id="input_1" placeholder="INSERISCI UN TESTO..."></textarea>
+                <textarea class="output" id="output_1" disabled></textarea>
+              </div>
+
+              <button class="button" id="button_1">AVVIA CIFRATURA</button>
+            </div>
+
+            <!-- cifratura -->
+            <div class="modalita_selezionata" id="cifratura">
+              <p class="titolo2">CIFRATURA</p>
+              <div class="contenitore_textarea">
+                <textarea class="input" id="input_2" placeholder="INSERISCI UN TESTO..."></textarea>
+                <textarea class="output" id="output_2" disabled></textarea>
+              </div>
+              <input type="date" class="input_data" id="input_data_1">
+
+              <button class="button" id="button_2">AVVIA CIFRATURA</button>
+            </div>
+
+            <!-- decifratura -->
+            <div class="modalita_selezionata" id="decifratura">
+              <p class="titolo3">DECIFRATURA</p>
+              <div class="contenitore_textarea">
+                <textarea class="input" id="input_3" placeholder="INSERISCI UN TESTO..."></textarea>
+                <textarea class="output" id="output_3" disabled></textarea>
+              </div>
+              <input type="date" class="input_data" id="input_data_2">
+
+              <button class="button" id="button_3">AVVIA DECIFRATURA</button>
+            </div>
+
+            <!-- traduzione -->
+            <div class="modalita_selezionata" id="traduzione">
+              <p class="titolo4">TRADUZIONE</p>
+              <div class="contenitore_textarea">
+                <textarea class="input" id="input_4" placeholder="INSERISCI UN TESTO..."></textarea>
+                <textarea class="output" id="output_4" disabled></textarea>
+              </div>
+              <input type="date" class="input_data" id="input_data_3">
+
+              <button class="button" id="button_4">AVVIA TRADUZIONE</button>
+
+            </div>
+          </main>
+        </div>
+        <script src="criptografia.js"></script>
+      </body>
+</html>
