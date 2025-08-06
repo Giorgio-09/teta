@@ -22,6 +22,7 @@ function estraiGiornoMese(dataStr) {
 
 // Azioni su click dei bottoni azione
 document.getElementById('button_1').addEventListener('click', () => {
+  // Cifra il messaggio inserito
   const messaggio = document.getElementById('input_1').value;
   fetch('http://127.0.0.1:5000/cifra', {
     method: 'POST',
@@ -63,7 +64,7 @@ document.getElementById('button_3').addEventListener('click', () => {
     return;
   }
 
-  fetch('http://127.0.0.1:5000/decifra', {
+  fetch('https://127.0.0.1:5000/decifra', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ messaggio, giorno: data.giorno, mese: data.mese })
